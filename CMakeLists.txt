@@ -3,8 +3,9 @@ cmake_minimum_required(VERSION 2.8)
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake
     ${CMAKE_MODULE_PATH})
 
-find_package(GLFW REQUIRED)
-find_package(OpenGL REQUIRED)
+find_package(GLEW REQUIRED)
+find_package(GL REQUIRED)
+find_package(GLUT REQUIRED)
 
 include_directories(
     ${GLFW_INCLUDE_DIR}
